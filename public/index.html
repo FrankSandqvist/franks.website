@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frank Sandqvist</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="side"></div>
+      <div id="content"></div>
+      <div class="side"></div>
+    </div>
+    <script>
+      var content = document.getElementById("content");
+
+      var typewriter = new Typewriter(content, {
+        loop: false,
+        cursor: "_"
+      });
+
+      typewriter
+        .typeString(`Frank Sandqvist<br />`)
+        .pauseFor(2500)
+        .typeString("kankki@gmail.com")
+        .start();
+    </script>
+  </body>
+</html>

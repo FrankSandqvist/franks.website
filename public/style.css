@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Perfect DOS VGA 437";
+  font-style: normal;
+  font-weight: normal;
+  src: url("font.woff") format("woff");
+}
+
+body {
+  background-color: black;
+  font-family: "Perfect DOS VGA 437", monospace;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.side {
+  flex: 1;
+}
+
+#content {
+  flex: 2;
+  min-width: 30rem;
+  margin-top: 2rem;
+  color: white;
+}

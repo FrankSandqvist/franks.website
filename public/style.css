@@ -19,9 +19,17 @@ body {
   flex: 1;
 }
 
+.space {
+  color: black;
+}
+
 #content {
   flex: 2;
   min-width: 30rem;
   margin-top: 2rem;
+  color: white;
+}
+
+a {
   color: white;
 }

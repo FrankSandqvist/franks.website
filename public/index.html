@@ -14,17 +14,136 @@
       <div class="side"></div>
     </div>
     <script>
-      var content = document.getElementById("content");
+      const content = document.getElementById("content");
 
-      var typewriter = new Typewriter(content, {
+      const typewriter = new Typewriter(content, {
         loop: false,
-        cursor: "_"
+        cursor: "_",
+        delay: 30
       });
 
+      const addLogo = () => {
+        document.getElementById("logo").innerHTML =
+          '___________<span class="space">_____________________</span>__<br />' +
+          '\\_<span class="space">___</span>_____/___________<span class="space">____</span>____<span class="space">_</span>|<span class="space">__</span>|<span class="space">_</span>__<br />' +
+          '<span class="space">_</span>|<span class="space">____</span>__)<span class="space">_</span>\\_<span class="space">__</span>__<span class="space">_</span>\\__<span class="space">__</span>\\<span class="space">__</span>/<span class="space">____</span>\\|<span class="space">__</span>|/<span class="space">_</span>/<br />' +
+          '<span class="space">_</span>|<span class="space">_____</span>\\<span class="space">___</span>|<span class="space">__</span>|<span class="space">_</span>\\//<span class="space">_</span>__<span class="space">_</span>\\|<span class="space">___</span>|<span class="space">__</span>\\<span class="space">____</span><<span class="space">_</span><br />' +
+          '<span class="space">_</span>\\___<span class="space">__</span>/<span class="space">___</span>|__|<span class="space">__</span>(____<span class="space">__</span>/___|<span class="space">__</span>/__|_<span class="space">_</span>\\<br />' +
+          '<span class="space">_____</span>\\/<span class="space">___</span>SANDQVIST<span class="space">___</span>\\/<span class="space">_____</span>\\/<span class="space">_____</span>\\/<br />';
+      };
+
       typewriter
-        .typeString(`Frank Sandqvist<br />`)
-        .pauseFor(2500)
-        .typeString("kankki@gmail.com")
+        .typeString("C:\\>")
+        .pauseFor(300)
+        .typeString("FRANK")
+        .pauseFor(300)
+        .typeString("<br />")
+        .changeDelay(30)
+        .typeString('<span id="logo"></span>')
+        .pauseFor(100)
+        .callFunction(addLogo, this)
+        .pauseFor(300)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString(
+          'Co-founder and lead developer at <a href="http://smidyo.com">Smidyo</a><br />'
+        )
+        .pauseFor(700)
+        .typeString(
+          '...also <a href="https://cnc-design.fi">CNC Design</a><br />'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '...and also <a href="https://nykarlebyinnovationcenter.fi">NIC</a><br />'
+        )
+        .pauseFor(1500)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString("I'm here:")
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString('-> <a href="mailto:kankki@gmail.com">kankki@gmail.com</a>')
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="https://www.linkedin.com/in/frank-sandqvist-9a096683/">LinkedIn</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString('-> <a href="https://twitter.com/kankki">Twitter</a>')
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString('-> <a href="https://github.com/FrankSandqvist">GitHub</a>')
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="https://www.youtube.com/channel/UCXM2jpilgk99oVqspvy30_A">YouTube</a>'
+        )
+        .pauseFor(1000)
+        .pauseFor(300)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString("Some of the projects I've been involved in:")
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(300)
+        .typeString(
+          '-> <a href="https://www.theverge.com/2014/7/15/5902757/pixelated-sunglasses-are-here-so-deal-with-it">Real life "Deal with it" sunglasses</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="https://www.polygon.com/2016/3/25/11303690/nintendo-nx-controller-hoax">Nintendo "NX" leak hoax</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .typeString(
+          '<span class="space">__</span>-> <a href="https://www.youtube.com/watch?v=z_B65J86D_8">Making of video</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="https://kotaku.com/that-youtuber-s-infamous-nintendo-switch-is-fake-1789096291">Nintendo Switch leak hoax</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '<span class="space">__</span>-> <a href="https://www.youtube.com/watch?v=JvmM6ihpnbw">Making of video</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="https://blog.hackjunction.com/the-winners-of-junction-2019-de539036dc3f">Junction 2019 Sustainability track winner</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '<span class="space">__</span>-> <a href="https://github.com/FrankSandqvist/k-food-lovers/tree/master/web">Source code!</a>'
+        )
+        .pauseFor(100)
+        .typeString("<br />")
+        .pauseFor(100)
+        .typeString(
+          '-> <a href="/artificiellt-osterbotten/">Artificiellt Österbot</a>'
+        )
+        .pauseFor(700)
+        .deleteChars(8)
+        .pauseFor(300)
+        .typeString('<a href="/artificiellt-osterbotten/">Osterbotten</a>')
         .start();
     </script>
   </body>
